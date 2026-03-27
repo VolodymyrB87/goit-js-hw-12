@@ -2,8 +2,10 @@ import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const lightBox = new SimpleLightbox('.gallery a');
-const imagesList = document.querySelector('.gallery');
+export const imagesList = document.querySelector('.gallery');
 const loader = document.querySelector('.loader');
+export const more = document.querySelector('.js-more');
+console.log(more);
 
 export function createGallery(images) {
   const galleryMarkup = images
@@ -37,5 +39,9 @@ export function showLoader() {
 export function hideLoader() {
   loader.classList.add('is-hidden');
 }
-showLoadMoreButton(){ };
-hideLoadMoreButton(){ };
+export function showLoadMoreButton() {
+  more.classList.remove('is-hidden');
+}
+export function hideLoadMoreButton() {
+  more.classList.add('is-hidden');
+}
