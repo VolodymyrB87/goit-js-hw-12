@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vanilla App Template</title>
   <script type="module" crossorigin src="/goit-js-hw-12/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-CFrPtiMb.css">
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-BXArD3N5.js">
+  <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/vendor-AL2zCFOW.css">
+  <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-BKCfhnX9.css">
 </head>
 
 <body>
@@ -17,9 +19,11 @@
       <input type="text" name="search-text" placeholder="Search images..." required>
     </label>
     <button type="submit">Search</button>
-    <div class="loader is-hidden"></div>
-    <ul class="gallery"></ul>
   </form>
+  <div class="loader is-hidden"></div>
+  <ul class="gallery"></ul>
+  <button type="submit" class="is-hidden js-more">Load more</button>
+
 
 
 </body>
